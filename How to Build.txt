@@ -1,0 +1,35 @@
+#####################
+### HOW TO BUILD  ###
+#####################
+
+
+-------------------------------------------
+PC:
+
+	-You must have devkitPro installed + ViGem
+
+	-Make a project in vs and compile 
+	 the ViGemClient.sln + your 3ds_controller.cpp
+
+--------------------------------------------
+3DS File:
+
+	-Go to the 3DS/source folder
+
+	-In the main.c file, line 13, change "0.0.0.0" to you pc's IPv4
+
+	-Open a cmd terminal and type "make" command in your 3DS folder 
+	 directoy (the same folder that has your MakeFile)
+	
+	-This will generate 3 files:  .3dsx, .elf, .smdh
+	
+	-Copy the .3dsx and smdh. files to your Nintendo 3DS "3DS" folder
+	 to be able to open it on your Homebrew Launcher
+
+---------------------------------------------
+
+Additional notes $$
+
+-Nintendo 3DS does not support 5G Wifis (it might wont connect)
+
+-Any issue with the ViGem part, just some yt tutorials, it might be a bit overwhelming
